@@ -1,0 +1,20 @@
+.bs-sort-btn {
+  all: unset;
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0 4px;
+  border-radius: 4px;
+  font-size: 11px;
+  line-height: 16px;
+  color: #6b7280;
+  cursor: pointer;
+  vertical-align: middle;
+  user-select: none;
+}
+.bs-sort-btn:hover { background: rgba(0, 0, 0, 0.08); color: #111827; }
+.bs-sort-btn:focus-visible { outline: 2px solid #0b996e; outline-offset: 1px; }
+.bs-sort-btn::after { content: "\21C5"; } /* ⇅ */
+.bs-sort-btn[data-dir="asc"]  { color: #0b996e; font-weight: 700; }
+.bs-sort-btn[data-dir="asc"]::after  { content: "\25B2"; } /* ▲ */
+.bs-sort-btn[data-dir="desc"] { color: #0b996e; font-weight: 700; }
+.bs-sort-btn[data-dir="desc"]::after { content: "\25BC"; } /* ▼ */

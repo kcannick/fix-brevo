@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Brevo Sorter",
+  "version": "0.1.0",
+  "description": "Adds sortable columns (Folder, Title, and more) to tables in the Brevo web app.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.brevo.com/*", "https://*.sendinblue.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
